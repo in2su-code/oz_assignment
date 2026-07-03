@@ -1,0 +1,204 @@
+/* ===== 전체 기본 설정 ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* ===== Header 영역 ===== */
+header {
+  background-color: #4A90E2;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 20px;
+  color: #EAF4FF;
+  margin: 0;
+}
+
+header small {
+  display: block;
+  margin-top: 8px;
+  color: #DCEEFF;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+/* ===== Main Layout ===== */
+main {
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+/* ===== Section Card ===== */
+section {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== 제목 스타일 ===== */
+h2 {
+  color: #2f5f9f;
+  border-left: 6px solid #4A90E2;
+  padding-left: 12px;
+  margin-bottom: 15px;
+}
+
+/* ===== Profile 영역 ===== */
+.profile-section {
+  text-align: center;
+}
+
+.profile-section h2 {
+  text-align: center;
+  border-left: none;
+  padding-left: 0;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid white;
+  box-shadow: 0 5px 15px rgba(0,0,0,.15);
+  margin: 20px auto;
+  display: block;
+}
+
+.profile-name {
+  font-size: 32px;
+  color: #2563EB;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.profile-title {
+  font-size: 18px;
+  color: #666;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile-description {
+  line-height: 1.8;
+  color: #555;
+}
+
+/* ===== GitHub 버튼 ===== */
+.github-btn {
+  display: inline-block;
+  background-color: #4A90E2;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.github-btn:hover {
+  background-color: #2563EB;
+  transform: translateY(-2px);
+}
+
+/* ===== Form 영역 ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+
+button {
+  width: 160px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4A90E2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2563EB;
+}
+
+/* ===== Table 영역 ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: #4A90E2;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+td {
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+tr:nth-child(even) {
+  background-color: #F8FAFC;
+}
+
+/* ===== 반응형 디자인 ===== */
+@media (max-width: 768px) {
+  main {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .profile-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .profile-name {
+    font-size: 28px;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  input {
+    max-width: 100%;
+  }
+}
